@@ -48,6 +48,16 @@ footer {
 /* Layout page CSS */
 /* ================================== */
 
+/* 1. navigation styling */
+
+.navbar__brand {
+  margin-left: 20px;
+}
+.navbar__menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .tile {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
@@ -70,21 +80,50 @@ footer {
   letter-spacing: 2px;
 }
 
-.hero-image {
+/* 2. Creaing Hero image section */
+.hero__container {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/assets/hero.jpg");
+    url("../assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
 
-  /* TODO: MODULE_LAYOUT */
+  /* 2.1: giving size to the hero image container */
   /* 1. Set a specific height. */
   /* 2. Position and center the image to scale nicely on all screens. */
+  position: relative;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.hero-subheading {
+.hero__text h1 {
+  color: white;
+}
+
+.hero__container img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.hero__subheading {
   font-size: 24px;
   font-weight: 100;
+  color: white;
 }
-.hero-input {
+.hero__input {
   width: 80%;
   height: 50px;
   padding: 16px;
@@ -95,6 +134,8 @@ footer {
 .nav-link {
   margin-right: 36px;
 }
+
+/* 3 grid system styling */
 
 /* ================================== */
 /* Adventures grid page CSS */
@@ -120,7 +161,6 @@ footer {
 .adventure-detail-card {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
-
 }
 
 .adventure-card-image {
