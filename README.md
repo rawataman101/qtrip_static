@@ -1,12 +1,11 @@
-# qtrip_static
-Crio.do Project
+QTripStatic
 
-QTripstatic
+QTrip is a travel website aimed at travellers looking for a multitude of adventures in different cities. 
 
-    - Build a responsive static front end for QTrip, an AirBnB-like travel planning website, and learn HTML, CSS, Bootstrap and more.
-    
-    - Master HTML elements, tags, and attributes by using them to structure the web pages of QTrip.
-    
-    - Learn CSS and its layout options like Grid, Flexbox by utilizing them to enhance the layout and position of various elements on the web page.
-    
-    - Learn Bootstrap by using it to design a responsive web page.
+During the course of this project,
+
+Created 3 different web pages from Wireframe layout using HTML and CSS
+
+Utilized Bootstrap extensively for responsive design
+
+Deployed the website to Netlify
