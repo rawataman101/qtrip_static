@@ -1,34 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QTrip Adventures</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QTrip Adventures</title>
-  <link rel="stylesheet" href="../../css/styles.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
+  <body>
+    <!-- 1. Copy navigation bar HTML from Landing page document -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="navbar__brand navbar-brand" href="#">QTrip</div>
 
-<body>
-  <!-- TODO: MODULE_ADVENTURES_GRID -->
-  <!-- 1. Copy navigation bar HTML from Landing page document -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <div class="container">
-    <div class="content">
-      <!-- TODO: MODULE_ADVENTURES_GRID -->
-      <!-- 1. Create the grid of adventures by adding child elements as required. -->
+      <div class="navbar__menu collapse navbar-collapse" id="collapsibleNavbar">
+        <!-- using bootstrap add -> class="navbar-nav d-flex justify-content-end w-100"  -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Explore</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container__body">
+      <div class="container__text">
+        <h1>Explore all advantures</h1>
+        <p>Here's a list of adventures that you can explore in city</p>
+      </div>
+      <div class="content">
+        <!-- 2. Create the grid of adventures by adding child elements as required. -->
+        <div class="row">
+          <div class="col col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
+            <a href="resort/">
+              <!-- card -->
+              <div class="card adventure-card">
+                <img
+                  class="card-img-top"
+                  src="../../assets/adventures/resort.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Resort</h5>
+                  <p class="card-text">₹1,200</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
+            <a href="tower/">
+              <!-- card -->
+              <div class="card adventure-card">
+                <img
+                  class="card-img-top"
+                  src="../../assets/adventures/tower.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Tower</h5>
+                  <p class="card-text">₹1,800</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
+            <a href="skiing/">
+              <!-- card -->
+              <div class="card adventure-card">
+                <img
+                  class="card-img-top"
+                  src="../../assets/adventures/church.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Skiing</h5>
+                  <p class="card-text">₹1,900</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
+            <a href="university/">
+              <!-- card -->
+              <div class="card adventure-card">
+                <img
+                  class="card-img-top"
+                  src="../../assets/adventures/university.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">University</h5>
+                  <p class="card-text">₹800</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- row 2 -->
+        <div class="row">
+          <div class="col col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
+            <a href="market/">
+              <!-- card -->
+              <div class="card adventure-card">
+                <img
+                  class="card-img-top"
+                  src="../../assets/adventures/market.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Market</h5>
+                  <p class="card-text">₹600</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
+            <a href="monu/">
+              <!-- card -->
+              <div class="card adventure-card">
+                <img
+                  class="card-img-top"
+                  src="../../assets/adventures/mount.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Monument</h5>
+                  <p class="card-text">₹1,200</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
+            <a href="canopy/">
+              <!-- card -->
+              <div class="card adventure-card">
+                <img
+                  class="card-img-top"
+                  src="../../assets/adventures/canopy.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Canopy</h5>
+                  <p class="card-text">₹1,800</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
+            <a href="beach/">
+              <!-- card -->
+              <div class="card adventure-card">
+                <img
+                  class="card-img-top"
+                  src="../../assets/adventures/beachside.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Beach Gateway</h5>
+                  <p class="card-text">₹2,200</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <footer>
-    <div class="container">© QTrip 2020</div>
-  </footer>
-  
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-  ></script>
-</body>
+    <footer>
+      <div class="container">© QTrip 2020</div>
+    </footer>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
